@@ -76,7 +76,7 @@ sub dbh {
   $dbh->{RaiseError} = 0; #This is not a very nice combo, now must make sure to catch db exceptions manually.
   $dbh->{PrintError} = 0; #Don't spam error messages. This allows to provide more context with the error to make it easier to debug things.
   $dbh->do("ALTER SESSION SET nls_date_format = 'yyyy-mm-dd\"T\"hh24:mi:ss'"); #ISO8601 as the default format. Only lower case variable name works here.
-  $dbh->do("ALTER SESSION SET CURRENT_SCHEMA = 'diakoniadb'");
+  $dbh->do("ALTER SESSION SET CURRENT_SCHEMA = diakoniadb");
   return $dbh;
 }
 

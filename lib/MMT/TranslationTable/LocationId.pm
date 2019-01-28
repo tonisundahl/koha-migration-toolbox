@@ -36,6 +36,12 @@ sub branchLoc($s, $kohaObject, $voyagerObject, $builder, $originalValue, $tableP
   };
 }
 
+sub patronLoc($s, $kohaObject, $voyagerObject, $builder, $originalValue, $tableParams, $transParams) {
+  return {
+    branch => uc($tableParams->[0] || ''),
+  } if (ref($kohaObject) eq 'MMT::Koha::Patron' );
+}
+
 =head2 statisticsLibrary
 
 Custom handling for the Finnish Library of Statistics and information service

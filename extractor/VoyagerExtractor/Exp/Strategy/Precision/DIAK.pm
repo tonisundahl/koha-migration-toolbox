@@ -14,7 +14,7 @@
 # along with koha-migration-toolbox; if not, see <http://www.gnu.org/licenses>.
 #
 
-package Exp::Strategy::Precision::HAMK;
+package Exp::Strategy::Precision::DIAK;
 
 #Pragmas
 use warnings;
