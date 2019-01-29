@@ -21,9 +21,11 @@ MMT::TranslationTable::LocationId - map voyager.location_id to Koha
 
 my $translationTableFile = MMT::Config::translationTablesDir."/location_id.yaml";
 
+
 sub new($class) {
   return $class->SUPER::new({file => $translationTableFile});
 }
+
 
 sub branchLoc($s, $kohaObject, $voyagerObject, $builder, $originalValue, $tableParams, $transParams) {
   return {
@@ -34,12 +36,6 @@ sub branchLoc($s, $kohaObject, $voyagerObject, $builder, $originalValue, $tableP
     itemtype => $tableParams->[4],
     notforloan => $tableParams->[5],
   };
-}
-
-sub patronLoc($s, $kohaObject, $voyagerObject, $builder, $originalValue, $tableParams, $transParams) {
-  return {
-    branch => uc($tableParams->[0] || ''),
-  } if (ref($kohaObject) eq 'MMT::Koha::Patron' );
 }
 
 =head2 statisticsLibrary
