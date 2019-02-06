@@ -12,7 +12,7 @@ use Carp;
 # External modules
 use Time::HiRes;
 use Log::Log4perl qw(:easy);
-use Hetula::Client;
+#use Hetula::Client;
 
 # Koha modules used
 use C4::Context;
@@ -272,10 +272,10 @@ sub uploadSSNKeys($s) {
   INFO "Opening BorrowernumberConversionTable '".$s->p('borrowernumberConversionTableFile')."' for reading";
   my $borrowernumberConversionTable = Bulk::ConversionTable::BorrowernumberConversionTable->new($s->p('borrowernumberConversionTableFile'), 'read');
 
-  INFO "Adding SSNs to Hetula, this will take a while";
-  my $hc = Hetula::Client->new({credentials => $s->p('uploadSSNKeysHetulaCredentialsFile')});
-  $hc->login();
-  $hc->ssnsBatchAddFromFile($s->p('uploadSSNKeysFile'), $s->p('uploadSSNKeysFile').'.hetula', 500);
+##  INFO "Adding SSNs to Hetula, this will take a while";
+##  my $hc = Hetula::Client->new({credentials => $s->p('uploadSSNKeysHetulaCredentialsFile')});
+##  $hc->login();
+##  $hc->ssnsBatchAddFromFile($s->p('uploadSSNKeysFile'), $s->p('uploadSSNKeysFile').'.hetula', 500);
 
   INFO "SSNs added. Importing ssn keys to Koha.";
   $s->{dbh} = C4::Context->dbh(); #DBH times out while waiting for Hetula most certainly
@@ -302,7 +302,8 @@ sub uploadSSNKeys($s) {
       next;
     }
 
-    $s->addBorrowerAttribute({borrowernumber => $borrowernumberNew}, 'SSN', $ssnKey);
+    #$s->addBorrowerAttribute({borrowernumber => $borrowernumberNew}, 'SSN', $ssnKey);
+    $s->addBorrowerAttribute({borrowernumber => $borrowernumberNew}, 'SSN', $ssn);
   }
 }
 
