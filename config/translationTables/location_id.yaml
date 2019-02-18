@@ -1,259 +1,294 @@
----
+##  branchLoc-sulkujen väliin tulee alla olevan rivin mukaiset sijainnit kohassa, pilkulla eroteltuna, samalla tavalla kuin _DE    FAULT_ rivillä.
+##  branchcode, shelving_location, collection_code, sub_location, item.itemtype, item.notforloan-status
 
-##
-## IN THIS FILE
-##
-## This mapping table is used by the module MMT::TranslationTable::LocationId
-## it defines mappings from voyager.location_id column to Koha's shelving_location and branchcode
-##
+1:   branchLoc()		#REVIEW    ,REVIEW
++REVIEW: ref(1)
+2:   branchLoc()		#mettiHA   ,Arabia hankinta
++mettiHA: ref(2)
+3:   branchLoc()		#metleHA   ,Leppävaara hankinta
++metleHA: ref(3)
+4:   branchLoc()		#metmyHA   ,Myyrmäki hankinta
++metmyHA: ref(4)
+5:   branchLoc()		#mettuLUKU ,Tukholmankatu lukusali
++mettuLUKU: ref(5)
+6:   branchLoc()		#metagYK   ,Agricolankatu yleiskok.
++metagYK: ref(6)
+7:   branchLoc()		#metagONT  ,Agricolankatu opinnäytet.
++metagONT: ref(7)
+8:   branchLoc()		#metagCDROM,Agricola CD-ROM
++metagCDROM: ref(8)
+9:   branchLoc()		#metagAV   ,Agricola videot
++metagAV: ref(9)
+10:  branchLoc()		#metagKK   ,Agricolankatu käsikirjat
++metagKK: ref(10)
+11:  branchLoc()		#metagLEH  ,Agricolankatu lehdet
++metagLEH: ref(11)
+12:  branchLoc()		#metagTYO  ,Agricolankatu työhuone
++metagTYO: ref(12)
+14:  branchLoc()		#metagHA   ,Agricolankatu hankinta
++metagHA: ref(14)
+15:  branchLoc()		#metbuYK   ,Bulevardi yleiskokoelma
++metbuYK: ref(15)
+16:  branchLoc()		#metbuONT  ,Bulevardi opinnäytetyöt
++metbuONT: ref(16)
+17:  branchLoc()		#metbuCDROM,Bulevardi CD-ROM
++metbuCDROM: ref(17)
+18:  branchLoc()		#metbuKK   ,Bulevardi käsikirjat
++metbuKK: ref(18)
+20:  branchLoc()		#metbuLEH  ,Bulevardi lehdet
++metbuLEH: ref(20)
+21:  branchLoc()		#metbuTYO  ,Bulevardi työhuone
++metbuTYO: ref(21)
+24:  branchLoc()		#REMOVED   ,REMOVED
++REMOVED: ref(24)
+25:  branchLoc()		#mettiAV   ,Arabia AV-aineisto
++mettiAV: ref(25)
+26:  branchLoc()		#mettiKK   ,Arabia käsikirjat
++mettiKK: ref(26)
+27:  branchLoc()		#mettiYK   ,Arabia yleiskokoelma
++mettiYK: ref(27)
+28:  branchLoc()		#mettiONT  ,Arabia opinnäytetyöt
++mettiONT: ref(28)
+29:  branchLoc()		#metleCDROM,Leppävaara CD-ROM
++metleCDROM: ref(29)
+30:  branchLoc()		#metleKK   ,Leppävaara käsikirjat
++metleKK: ref(30)
+32:  branchLoc()		#metleONT  ,Leppävaara opinnäytetyöt
++metleONT: ref(32)
+33:  branchLoc()		#metleVAR  ,Leppävaara varasto
++metleVAR: ref(33)
+34:  branchLoc()		#metleAV   ,Leppävaara videot
++metleAV: ref(34)
+35:  branchLoc()		#metleVIR  ,Leppävaara virkailija
++metleVIR: ref(35)
+36:  branchLoc()		#metleYK   ,Leppävaara yleiskokoelma
++metleYK: ref(36)
+37:  branchLoc()		#metmyCDROM,Myyrmäki palvelutiski
++metmyCDROM: ref(37)
+38:  branchLoc()		#metmyKK   ,Myyrmäki käsikirjat
++metmyKK: ref(38)
+39:  branchLoc()		#metmyLYHYT,Myyrmäki viikon laina
++metmyLYHYT: ref(39)
+40:  branchLoc()		#metmyONT  ,Myyrmäki opinnäytetyöt
++metmyONT: ref(40)
+41:  branchLoc()		#metmyVAR  ,Myyrmäki varasto
++metmyVAR: ref(41)
+42:  branchLoc()		#metmyAV   ,Myyrmäki videot
++metmyAV: ref(42)
+43:  branchLoc()		#metmyYK   ,Myyrmäki yleiskokoelma
++metmyYK: ref(43)
+44:  branchLoc()		#metonYK   ,Onnentie yleiskokoelma
++metonYK: ref(44)
+45:  branchLoc()		#metonONT  ,Onnentie opinnäytetyöt
++metonONT: ref(45)
+46:  branchLoc()		#metonAV   ,Onnentie videot
++metonAV: ref(46)
+47:  branchLoc()		#metonKK   ,Onnentie käsikirjat
++metonKK: ref(47)
+48:  branchLoc()		#metonLEH  ,Onnentie lehdet
++metonLEH: ref(48)
+50:  branchLoc()		#metsoYK   ,Arabia var yleiskokoelma
++metsoYK: ref(50)
+51:  branchLoc()		#metsoONT  ,Sofianlehto opinnäytetyöt
++metsoONT: ref(51)
+52:  branchLoc()		#metsoCDROM,Sofianlehto CD-ROM
++metsoCDROM: ref(52)
+53:  branchLoc()		#metsoAV   ,Sofianlehto videot
++metsoAV: ref(53)
+54:  branchLoc()		#metsoKK   ,Sofianlehto käsikirjat
++metsoKK: ref(54)
+55:  branchLoc()		#metsoLEH  ,Sofianlehto lehdet
++metsoLEH: ref(55)
+57:  branchLoc()		#mettuONT  ,Tukholmankatu opinnäytety
++mettuONT: ref(57)
+58:  branchLoc()		#mettuCDROM,Tukholmankatu CD-ROM
++mettuCDROM: ref(58)
+59:  branchLoc()		#mettuAV   ,Tukholmankatu videot
++mettuAV: ref(59)
+61:  branchLoc()		#mettuVAR  ,Arabia varasto (Tukho var
++mettuVAR: ref(61)
+65:  branchLoc()		#mettuHA   ,Tukholmankatu hankinta
++mettuHA: ref(65)
+66:  branchLoc()		#metviYK   ,Viertotie yleiskokoelma
++metviYK: ref(66)
+68:  branchLoc()		#metviCDROM,Viertotie CD-ROM
++metviCDROM: ref(68)
+70:  branchLoc()		#metviAANI ,Viertotie aanitteet
++metviAANI: ref(70)
+71:  branchLoc()		#metviKK   ,Viertotie käsikirjat
++metviKK: ref(71)
+74:  branchLoc()		#metviOPEMA,Viertotie opetusmat.
++metviOPEMA: ref(74)
+75:  branchLoc()		#metbuHA   ,Bulevardi hankinta
++metbuHA: ref(75)
+76:  branchLoc()		#metonHA   ,Onnentie hankinta
++metonHA: ref(76)
+77:  branchLoc()		#metsoHA   ,Sofianlehto hankinta
++metsoHA: ref(77)
+78:  branchLoc()		#metviHA   ,Viertotie hankinta
++metviHA: ref(78)
+79:  branchLoc()		#metagLU   ,Agricola luettelointi
++metagLU: ref(79)
+80:  branchLoc()		#metbuLU   ,Bulevardi luettelointi
++metbuLU: ref(80)
+81:  branchLoc()		#metleLU   ,Leppävaara luettelointi
++metleLU: ref(81)
+82:  branchLoc()		#metmyLU   ,Myyrmäki luettelointi
++metmyLU: ref(82)
+83:  branchLoc()		#metonLU   ,Onnentie luettelointi
++metonLU: ref(83)
+84:  branchLoc()		#metsoLU   ,Sofianlehto luettelointi
++metsoLU: ref(84)
+85:  branchLoc()		#mettiLU   ,Arabia luettelointi
++mettiLU: ref(85)
+86:  branchLoc()		#mettuLU   ,Tukholmank luettelointi
++mettuLU: ref(86)
+87:  branchLoc()		#metviLU   ,Viertotie luettelointi
++metviLU: ref(87)
+60:  branchLoc()		#mettuKK   ,Tukholmankatu käsikirjat
++mettuKK: ref(60)
+63:  branchLoc()		#mettuLEH  ,Tukholmankatu lehdet
++mettuLEH: ref(63)
+64:  branchLoc()		#mettuTYO  ,Tukholmankatu työhuone
++mettuTYO: ref(64)
+62:  branchLoc()		#mettuVARLE,Tukholmank lehdet varasto
++mettuVARLE: ref(62)
+56:  branchLoc()		#mettuYK   ,Arabia varasto yleiskok.
++mettuYK: ref(56)
+69:  branchLoc()		#metviAV   ,Viertotie videot
++metviAV: ref(69)
+73:  branchLoc()		#metviLEH  ,Viertotie lehdet
++metviLEH: ref(73)
+67:  branchLoc()		#metviONT  ,Viertotie opinnäytetyöt
++metviONT: ref(67)
+72:  branchLoc()		#metviVAR  ,Viertotie varasto
++metviVAR: ref(72)
+23:  branchLoc()		#metWWW    ,Verkkoaineisto
++metWWW: ref(23)
+143: branchLoc()		#metmpLA   ,Myllypuro lainaus
++metmpLA: ref(143)
+144: branchLoc()		#metmpYK   ,Myllypuro yleiskokoelma
++metmpYK: ref(144)
+117: branchLoc()		#metleINV  ,Inventaario/Leppavaara
++metleINV: ref(117)
+118: branchLoc()		#mettuINV  ,Inventaario Tukho
++mettuINV: ref(118)
+126: branchLoc()		#mettiPIKA ,Arabia pikalainat
++mettiPIKA: ref(126)
+128: branchLoc()		#MAKSU     ,Verkkomaksaminen
++MAKSU: ref(128)
+131: branchLoc()		#mettiAANI ,Arabia äänitteet
++mettiAANI: ref(131)
+132: branchLoc()		#mettiNUO  ,Arabia nuotit
++mettiNUO: ref(132)
+133: branchLoc()		#mettiNUOKK,Arabia nuottikäsikirjasto
++mettiNUOKK: ref(133)
+134: branchLoc()		#mettiORK  ,Arabia orkesterimateriaal
++mettiORK: ref(134)
+135: branchLoc()		#mettiPAR  ,Arabia partituurit
++mettiPAR: ref(135)
+136: branchLoc()		#mettiJOULU,Arabia joulumateriaali
++mettiJOULU: ref(136)
+145: branchLoc()		#metmpPIKA ,Myllypuro viikon laina
++metmpPIKA: ref(145)
+146: branchLoc()		#metmpONT  ,Myllypuro opinnäytteet
++metmpONT: ref(146)
+147: branchLoc()		#metmpLU   ,Myllypuro luettelointi
++metmpLU: ref(147)
+148: branchLoc()		#metmpKK   ,Myllypuro käsikirjat
++metmpKK: ref(148)
+149: branchLoc()		#metmpLEH  ,Myllypuro lehdet
++metmpLEH: ref(149)
+150: branchLoc()		#metmpHA   ,Myllypuro hankinta
++metmpHA: ref(150)
+151: branchLoc()		#metmpAU   ,Myllypuro automaatti
++metmpAU: ref(151)
+120: branchLoc()		#metmyINV  ,Myyrmäki INVENTAARIO
++metmyINV: ref(120)
+116: branchLoc()		#metbuINV  ,Inventaario BULE
++metbuINV: ref(116)
+122: branchLoc()		#mettuPIKA ,Arabia var viikon laina
++mettuPIKA: ref(122)
+124: branchLoc()		#metsoERI  ,Varasto, erikoiskokoelma
++metsoERI: ref(124)
+115: branchLoc()		#metsoAANI ,Sofianlehto äänitteet
++metsoAANI: ref(115)
+127: branchLoc()		#metmaLA   ,Mannerheimintie lainaus
++metmaLA: ref(127)
+129: branchLoc()		#metruLA   ,Ruoholahti lainaus
++metruLA: ref(129)
+88:  branchLoc()		#metleLEH  ,Leppävaara lehdet
++metleLEH: ref(88)
+89:  branchLoc()		#metmyLEH  ,Myyrmäki lehdet
++metmyLEH: ref(89)
+90:  branchLoc()		#mettiLEH  ,Arabia lehdet
++mettiLEH: ref(90)
+91:  branchLoc()		#metagLA   ,Agricolankatu lainaus
++metagLA: ref(91)
+92:  branchLoc()		#metbuLA   ,Bulevardi lainaus
++metbuLA: ref(92)
+93:  branchLoc()		#metleLA   ,Leppävaara lainaus
++metleLA: ref(93)
+94:  branchLoc()		#metmyLA   ,Myyrmäki lainaus
++metmyLA: ref(94)
+95:  branchLoc()		#metonLA   ,Onnentie lainaus
++metonLA: ref(95)
+96:  branchLoc()		#metsoLA   ,Sofianlehdonkatu lainaus
++metsoLA: ref(96)
+97:  branchLoc()		#mettiLA   ,Arabia lainaus
++mettiLA: ref(97)
+98:  branchLoc()		#mettuLA   ,Tukholmankatu lainaus
++mettuLA: ref(98)
+99:  branchLoc()		#metviLA   ,Viertotie lainaus
++metviLA: ref(99)
+100: branchLoc()		#metagAU   ,Agricolankatu automaatti
++metagAU: ref(100)
+101: branchLoc()		#metbuAU   ,Bulevardi automaatti
++metbuAU: ref(101)
+102: branchLoc()		#metleAU   ,Leppävaara automaatti
++metleAU: ref(102)
+103: branchLoc()		#metmyAU   ,Myyrmäki automaatti
++metmyAU: ref(103)
+104: branchLoc()		#metonAU   ,Onnentie automaatti
++metonAU: ref(104)
+105: branchLoc()		#metsoAU   ,Sofianlehto automaatti
++metsoAU: ref(105)
+106: branchLoc()		#mettiAU   ,Arabia automaatti
++mettiAU: ref(106)
+107: branchLoc()		#mettuAU1  ,Tukholmankatu automaatti1
++mettuAU1: ref(107)
+108: branchLoc()		#mettuAU2  ,Tukholmankatu automaatti2
++mettuAU2: ref(108)
+109: branchLoc()		#metviAU   ,Viertotie automaatti
++metviAU: ref(109)
+110: branchLoc()		#metmyAU2  ,Myyrmäki automaatti2
++metmyAU2: ref(110)
+113: branchLoc()		#mettuAANI ,Tukholmankatu äänitteet
++mettuAANI: ref(113)
+114: branchLoc()		#LASKUTETTU,Laskutettu aineisto
++LASKUTETTU: ref(114)
+119: branchLoc()		#metsoINV  ,Inventaario Soffari
++metsoINV: ref(119)
+121: branchLoc()		#metmyVIR  ,Myyrmäki Virkailija
++metmyVIR: ref(121)
+123: branchLoc()		#metsoPIKA ,Arabia var. viikon laina
++metsoPIKA: ref(123)
+125: branchLoc()		#metmaKK   ,Mannerheimintie käsikirja
++metmaKK: ref(125)
+130: branchLoc()		#metroDB   ,E-aineistot
++metroDB: ref(130)
+142: branchLoc()		#metmyAU3  ,Myyrmäki automaatti3
++metmyAU3: ref(142)
+137: branchLoc()		#metagPIKA ,Agricolank. viikon laina
++metagPIKA: ref(137)
+138: branchLoc()		#metbuPIKA ,Bulevardi viikon laina
++metbuPIKA: ref(138)
+139: branchLoc()		#metlePIKA ,Leppävaara viikon laina
++metlePIKA: ref(139)
+140: branchLoc()		#metviPIKA ,Viertotie viikon laina
++metviPIKA: ref(140)
+141: branchLoc()		#metagINV  ,Inventaario Agri
++metagINV: ref(141)
 
-##
-## ref(101) - Refer another value instead.
-##
-## Used to alias various values to make accessing this table with different values from different data sources.
-## Mainly the MARC-records refer using string-key, and other parts refer with the id.
+_DEFAULT_: branchLoc(KONVERSIO, KONVERSIO, KONVERSIO, KONVERSIO) #Oletusarvot / paikkaansa löytämättömät
 
-#Voyager.LOCATION -table
-#location_id,location_code,       #location_name
-
-#branchLoc sets the following attributes:
-#       branchcode, shelving_location, collection_code, sub_location, item.itemtype, item.notforloan-status
-1: branchLoc(HAMKO, EI_KOHAAN) #Hamkoark, Evo Arkisto
-+Hamkoark: ref(1)
-2: branchLoc(HAMKO, LAI) #Hamkokir, Evo Kirjasto lainakokoelma
-+Hamkokir: ref(2)
-3: branchLoc(HAMKO, VAR) #Hamkovar, Evo Varasto,
-+Hamkovar: ref(3)
-4: branchLoc(HAMKO, LEH) #Hamkoleh, Evo Lehdet,
-+Hamkoleh: ref(4)
-5: branchLoc(HAMKO, EI_KOHAAN) #Hamkoopi, Evo Opinn?ytteet,
-+Hamkoopi: ref(5)
-6: branchLoc(HAMKF, EI_KOHAAN) #Hamkfark, Forssa Arkisto,
-+Hamkfark: ref(6)
-7: branchLoc(HAMKF, LAI) #Hamkfkir, Forssa Kirjasto lainakokoelma
-+Hamkfkir: ref(7)
-8: branchLoc(HAMKF, EI_KOHAAN) #Hamkfref, Forssa K?sikirjasto
-+Hamkfref: ref(8)
-9: branchLoc(HAMKF, LEH) #Hamkfleh, Forssa Lehdet,
-+Hamkfleh: ref(9)
-10: branchLoc(HAMKF, EI_KOHAAN) #Hamkfopi, Forssa Opinn?ytteet,
-+Hamkfopi: ref(10)
-11: branchLoc(HAMKF, EI_KOHAAN) #Hamkfstan, Forssa Standardit,
-+Hamkfstan: ref(11)
-12: branchLoc(HAMKA, LAI) #Hamkavana, Visam?ki Kirjasto,
-+Hamkavana: ref(12)
-13: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkaahve,zz?L? K?YT?
-+Hamkaahve: ref(13)
-14: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkaaula, zzEI K?YT?SS?,
-+Hamkaaula: ref(14)
-15: branchLoc(HAMKA, LEH) #Hamkaleh, Visam?ki Lehdet,
-+Hamkaleh: ref(15)
-16: branchLoc(HAMKA, EI_KOHAAN) #Hamkakir, zzPOIS K?YT?ST?,
-+Hamkakir: ref(16)
-17: branchLoc(HAMKH, VAR) #Hamkaref, Visam?ki K?sikirjasto,#uusi kirjasto KOHAssa HenkilÃ¶kunnan kokoelma, Hamkh, hyllypaikka varasto
-+Hamkaref: ref(17)
-18: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkasal, Visam?ki Salainen,
-+Hamkasal: ref(18)
-19: branchLoc(HAMKA, SAIREF) #Hamkasai, Sairio K?sikirjasto,
-+Hamkasai: ref(19)
-20: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkaopi, Visam?ki Opinn?ytteet,
-+Hamkaopi: ref(20)
-21: branchLoc(HAMKA, STAN) #Hamkastan, Visam?ki Standardit,
-+Hamkastan: ref(21)
-22: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkavar, Visam?ki Varasto,
-+Hamkavar: ref(22)
-23: branchLoc(HAMKL, LAI) #Hamklkir, Lepaa Kirjasto,
-+Hamklkir: ref(23)
-24: branchLoc(HAMKL, REF) #Hamklref, Lepaa K?sikirjasto,
-+Hamklref: ref(24)
-25: branchLoc(HAMKL, LEH) #Hamklleh, Lepaa Lehdet,
-+Hamklleh: ref(25)
-26: branchLoc(HAMKL, EI_KOHAAN) #Hamklopi, Lepaa Opinn?ytteet,
-+Hamklopi: ref(26)
-27: branchLoc(HAMKL, VAR) #Hamklvar, Lepaa Varasto,
-+Hamklvar: ref(27)
-28: branchLoc(HAMKL, EI_KOHAAN) #Hamklstan, Lepaa Standardit,
-+Hamklstan: ref(28)
-29: branchLoc(HAMKL, MUS, LIN) #Hamklmhl, LepaaMuseo Hertta Linkola,#Kirjasto Lepaa, hyllypaikka_loc museo ja Ccode Hertta Linkolan kokoelma
-+Hamklmhl: ref(29)
-30: branchLoc(HAMKL, MUS) #Hamklmmus, LepaaMuseo Museokokoelma, #Kirjasto Lepaa, Hyllypaikka useo
-+Hamklmmus: ref(30)
-31: branchLoc(HAMKM, ARK) #Hamkmark, Mustiala Arkisto,
-+Hamkmark: ref(31)
-32: branchLoc(HAMKM, LAI) #Hamkmkir, Mustiala Kirjasto,
-+Hamkmkir: ref(32)
-33: branchLoc(HAMKM, VAR) #Hamkmvar, Mustiala Varasto,
-+Hamkmvar: ref(33)
-34: branchLoc(HAMKM, EI_KOHAAN) #Hamkmref, Mustiala K?sikirjasto,
-+Hamkmref: ref(34)
-35: branchLoc(HAMKM, LEH) #Hamkmleh, Mustiala Lehdet,
-+Hamkmleh: ref(35)
-36: branchLoc(HAMKM, EI_KOHAAN) #Hamkmopi, Mustiala Opinn?ytteet,
-+Hamkmopi: ref(36)
-37: branchLoc(HAMKR, REF) #Hamkrref, Riihim?ki K?sikirjasto,
-+Hamkrref: ref(37)
-38: branchLoc(HAMKR, LAI) #Hamkrkir, Riihim?ki Kirjasto,
-+Hamkrkir: ref(38)
-39: branchLoc(HAMKR, EI_KOHAAN) #Hamkrvar, Riihim?ki Varasto,
-+Hamkrvar: ref(39)
-40: branchLoc(HAMKR, EI_KOHAAN) #Hamkrark, Riihim?ki Arkisto,
-+Hamkrark: ref(40)
-41: branchLoc(HAMKR, LEH) #Hamkrleh, Riihim?ki Lehdet,
-+Hamkrleh: ref(41)
-42: branchLoc(HAMKR, EI_KOHAAN,,) #Hamkropi, Riihim?ki Opinn?ytteet,
-+Hamkropi: ref(42)
-43: branchLoc(HAMKR, STAN) #Hamkrstan, Riihim?ki Standardit,
-+Hamkrstan: ref(43)
-44: branchLoc(HAMKR, EI_KOHAAN) #Hamkritse, XXRiihim?ki Itseopiskelu,
-+Hamkritse: ref(44)
-45: branchLoc(HAMKV, LAI) #Hamkvkir, Valkeakoski Kirjasto,
-+Hamkvkir: ref(45)
-46: branchLoc(HAMKV, REF) #Hamkvref, Valkeakoski K?sikirjasto,
-+Hamkvref: ref(46)
-47: branchLoc(HAMKV, LEH) #Hamkvleh, Valkeakoski Lehdet,
-+Hamkvleh: ref(47)
-48: branchLoc(HAMKV, EI_KOHAAN) #Hamkvopi, Valkeakoski Opinn?ytteet,
-+Hamkvopi: ref(48)
-49: branchLoc(HAMKV, STAN) #Hamkvstan, Valkeakoski Standardit,
-+Hamkvstan: ref(49)
-50: branchLoc(HAMKV, EI_KOHAAN) #Hamkvark, Valkeakoski Arkisto,
-+Hamkvark: ref(50)
-51: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkwkir, zzWetterhoff Kirjasto,
-+Hamkwkir: ref(51)
-52: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkwref, zzWetterhoff K?sikirjasto,
-+Hamkwref: ref(52)
-53: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkwdia, xxWetterhoff Diat,
-+Hamkwdia: ref(53)
-54: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkwleh, zzWetterhoff Lehdet,
-+Hamkwleh: ref(54)
-55: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkwopi, zzWetterhoff Opinn?ytteet,
-+Hamkwopi: ref(55)
-56: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkwark, zzWetterhoff Arkisto,
-+Hamkwark: ref(56)
-57: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkwstan, zzWetterhoff Standardit,
-+Hamkwstan: ref(57)
-58: branchLoc(HAMKO, EI_KOHAAN) #HAMKOLAINA, EVO LAINAUS,
-+HAMKOLAINA: ref(58)
-59: branchLoc(HAMKF, EI_KOHAAN) #HAMKFLAINA, FORSSA LAINAUS,
-+HAMKFLAINA: ref(59)
-60: branchLoc(HAMKA, EI_KOHAAN) #HAMKALAINA, VISAM?KI LAINAUS,
-+HAMKALAINA: ref(60)
-61: branchLoc(HAMKL, EI_KOHAAN) #HAMKLLAINA, LEPAA LAINAUS,
-+HAMKLLAINA: ref(61)
-62: branchLoc(HAMKM, EI_KOHAAN) #HAMKMLAINA, MUSTIALA LAINAUS,
-+HAMKMLAINA: ref(62)
-63: branchLoc(HAMKR, EI_KOHAAN) #HAMKRLAINA, RIIHIM?KI LAINAUS,
-+HAMKRLAINA: ref(63)
-64: branchLoc(HAMKV, EI_KOHAAN) #HAMKVLAINA, VALKEAKOSKI LAINAUS,
-+HAMKVLAINA: ref(64)
-65: branchLoc(EI_KOHAAN, EI_KOHAAN) #HAMKWLAINA, WETTERHOFF LAINAUS,
-+HAMKWLAINA: ref(65)
-66: branchLoc(EI_KOHAAN, EI_KOHAAN) #HAMKSELF, ITSEPALVELULAINAUS,
-+HAMKSELF: ref(66)
-67: branchLoc(EI_KOHAAN, EI_KOHAAN) #HAMKALUETT, HAMK LUETTELOINTI,
-+HAMKALUETT: ref(67)
-68: branchLoc(EI_KOHAAN, EI_KOHAAN) #TOIMLUETT, TOIMIPISTE LUETTELOINTI,
-+TOIMLUETT: ref(68)
-69: branchLoc(EI_KOHAAN, EI_KOHAAN) #HAMKHANKI, HAMK HANKINTA,
-+HAMKHANKI: ref(69)
-70: branchLoc(EI_KOHAAN, EI_KOHAAN) #HAMKOPAC, OPAC,
-+HAMKOPAC: ref(70)
-71: branchLoc(HAMKO, EI_KOHAAN) #Hamkopois, Evo Poistot,
-+Hamkopois: ref(71)
-72: branchLoc(HAMKF, EI_KOHAAN) #Hamkfpois, Forssa Poistot,
-+Hamkfpois: ref(72)
-73: branchLoc(HAMKA, EI_KOHAAN) #Hamkapois, zzEI K?YTET?,
-+Hamkapois: ref(73)
-74: branchLoc(HAMKL, EI_KOHAAN) #Hamklpois, Lepaa Poistot,
-+Hamklpois: ref(74)
-75: branchLoc(HAMKM, EI_KOHAAN) #Hamkmpois, Mustiala Poistot,
-+Hamkmpois: ref(75)
-76: branchLoc(HAMKR, EI_KOHAAN) #Hamkrpois, Riihim?ki Poistot,
-+Hamkrpois: ref(76)
-77: branchLoc(HAMKV, EI_KOHAAN) #Hamkvpois, Valkeakoski Poistot,
-+Hamkvpois: ref(77)
-78: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkwpois, Wetterhoff Poistot,
-+Hamkwpois: ref(78)
-79: branchLoc(HAMKA, EI_KOHAAN) #Hamkaraksa, Lahdensivu selvitett?vi?,
-+Hamkaraksa: ref(79)
-80: branchLoc(HAMKO, EI_KOHAAN) #HAMKOSELF, EVO IP_LAINAUS,
-+HAMKOSELF: ref(80)
-81: branchLoc(HAMKF, EI_KOHAAN) #HAMKFSELF, FORSSA IP_LAINAUS,
-+HAMKFSELF: ref(81)
-82: branchLoc(HAMKL, EI_KOHAAN) #HAMKLSELF, LEPAA IP_LAINAUS,
-+HAMKLSELF: ref(82)
-83: branchLoc(HAMKM, EI_KOHAAN) #HAMKMSELF, MUSTIALA IP_LAINAUS,
-+HAMKMSELF: ref(83)
-84: branchLoc(HAMKR, EI_KOHAAN) #HAMKRSELF, RIIHIM?KI IP_LAINAUS,
-+HAMKRSELF: ref(84)
-85: branchLoc(HAMKV, EI_KOHAAN) #HAMKVSELF, VALKEAKOSKI IP_LAINAUS,
-+HAMKVSELF: ref(85)
-86: branchLoc(EI_KOHAAN, EI_KOHAAN) #HAMKWSELF, WETTERHOFF IP_LAINAUS,
-+HAMKWSELF: ref(86)
-87: branchLoc(HAMKO, REF) #Hamkoref, Evo K?sikirjasto,
-+Hamkoref: ref(87)
-88: branchLoc(HAMKH, VL) #Hamkvl, Virkak?ytt? - lainat, #uusi kirjasto KOHAssa HenkilÃ¶kunnan kokoelma, Hamkh - hyllypaikka_location vl (virkalaina)
-+Hamkvl: ref(88)
-89: branchLoc(HAMKH, VS) #Hamkvs, Virkak?ytt? -sijainnit, #uusi kirjasto KOHAssa HenkilÃ¶kunnan kokoelma, Hamkh ja hyllypaikka_location vs (virkasijainti)
-+Hamkvs: ref(89)
-90: branchLoc(HAMK, WWW) #Hamkwww, HAMK Verkkoaineisto,
-+Hamkwww: ref(90)
-91: branchLoc(HAMKL, EI_KOHAAN) #Hamklark, LepaaArkisto,
-+Hamklark: ref(91)
-92: branchLoc(HAMKV, EI_KOHAAN) #Hamkvkurs, Valkeakoski kurssikirjat,
-+Hamkvkurs: ref(92)
-93: branchLoc(HAMKM, EI_KOHAAN) #Hamkmkurs, Mustiala kurssiaineisto,
-+Hamkmkurs: ref(93)
-94: branchLoc(HAMKL, EI_KOHAAN) #Hamklkurs, Lepaa kurssikirjat,
-+Hamklkurs: ref(94)
-95: branchLoc(HAMKM, EI_KOHAAN) #Hamkmstan, Mustiala Standardit,
-+Hamkmstan: ref(95)
-96: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkjulrek, HAMKin julkaisurekisteri,
-+Hamkjulrek: ref(96)
-97: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkbkir, XXLahdensivu Kirjasto,
-+Hamkbkir: ref(97)
-99: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkbleh, XXLahdensivu Lehdet,
-+Hamkbleh: ref(99)
-100: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkbopi, Lahdensivu Opinn?ytteet,
-+Hamkbopi: ref(100)
-101: branchLoc(EI_KOHAAN, EI_KOHAAN) #HAMKBLAINA, XXAINOLA-SOTE,
-+HAMKBLAINA: ref(101)
-102: branchLoc(EI_KOHAAN, EI_KOHAAN) #HAMKBSELF, LAHDENSIVU IP_LAINAUS,
-+HAMKBSELF: ref(102)
-103: branchLoc(HAMKA, EI_KOHAAN) #Hamkakurs, Visam?ki kurssikirjat,
-+Hamkakurs: ref(103)
-104: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkbkurs, XXLahdensivu kurssiain,
-+Hamkbkurs: ref(104)
-105: branchLoc(HAMKR, EI_KOHAAN) #Hamkrkurs, Riihim?ki kurssikirjat,
-+Hamkrkurs: ref(105)
-106: branchLoc(HAMKA, EI_KOHAAN) #Hamkalex, Visam?ki Sanomalehdet,
-+Hamkalex: ref(106)
-107: branchLoc(EI_KOHAAN, EI_KOHAAN) #Hamkblex, Lahdensivu Sanomalehdet,
-+Hamkblex: ref(107)
-108: branchLoc(HAMKF, EI_KOHAAN) #Hamkflex, Forssa Sanomalehdet,
-+Hamkflex: ref(108)
-109: branchLoc(HAMKL, EI_KOHAAN) #Hamkllex, Lepaa Sanomalehdet,
-+Hamkllex: ref(109)
-110: branchLoc(HAMKM, EI_KOHAAN) #Hamkmlex, Mustiala Sanomalehdet,
-+Hamkmlex: ref(110)
-111: branchLoc(HAMKO, EI_KOHAAN) #Hamkolex, Evo Sanomalehdet,
-+Hamkolex: ref(111)
-112: branchLoc(HAMKR, EI_KOHAAN) #Hamkrlex, Riihim?ki Sanomalehdet,
-+Hamkrlex: ref(112)
-113: branchLoc(HAMKV, EI_KOHAAN) #Hamkvlex, Valkeakoski Sanomalehdet,
-+Hamkvlex: ref(113)
-114: branchLoc(HAMKM, MUS) #Hamkmmus, Mustiala Museokokoelma #kirjasto Mustiala, hyllypaikka museo
-+Hamkmmus: ref(114)
-115: branchLoc(HAMKV, EI_KOHAAN) #Hamkvvar, Valkeakoski Varasto,
-+Hamkvvar: ref(115)
-116: branchLoc(HAMKO, EI_KOHAAN) #Hamkoesi, Evo Esineet,
-+Hamkoesi: ref(116)
-117: branchLoc(HAMK, ARK) #Hamksark, HAMK Opinn?ytety?arkisto,
-+Hamksark: ref(117)
-118: branchLoc(HAMK, WWN) #Hamkwwwn, Tietokannat Vanaicatissa,
-+Hamkwwwn: ref(118)
-119: branchLoc(HAMKO, MUS) #Hamkomus, Evo Museo, #kirjasto Evo, hyllypaikka museo
-+Hamkomus: ref(119)
-120: branchLoc(EI_KOHAAN, EI_KOHAAN) #MAKSU, Verkkomaksaminen,
-+MAKSU: ref(120)
-_DEFAULT_: branchLoc(HAMK, KONVERSIO, ERROR, ERROR) #By default, print a warning and use defaults )
