@@ -4,43 +4,43 @@
 1:  branchLoc()		#REVIEW    #REVIEW
 +REVIEW: ref(1)
 13: branchLoc()		#t-mono    #zt-monografi
-+zt-monografi: ref(13)
++t-mono: ref(13)
 14: branchLoc()		#v-exarb   #v-examensarbete
-+v-examensarbete: ref(14)
++v-exarb: ref(14)
 15: branchLoc()		#v-hand    #v-handbiblioteket
-+v-handbiblioteket: ref(15)
++v-hand: ref(15)
 16: branchLoc()		#v-mono    #v-monografi
-+v-monografi: ref(16)
++v-mono: ref(16)
 17: branchLoc()		#v-inst    #v-institutionsexemplar
-+v-institutionsexemplar: ref(17)
++v-inst: ref(17)
 18: branchLoc()		#v-lager   #v-lager
 +v-lager: ref(18)
 19: branchLoc()		#v-ref     #v-referens
-+v-referens: ref(19)
++v-ref: ref(19)
 20: branchLoc()		#v-av      #v-AV-material
-+v-AV-material: ref(20)
++v-av: ref(20)
 25: branchLoc()		#T-LANEDISK#zt-lånedisk
-+zt-lånedisk: ref(25)
++T-LANEDISK: ref(25)
 24: branchLoc()		#H-LANEDISK#zh-lånedisk
-+zh-lånedisk: ref(24)
++H-LANEDISK: ref(24)
 26: branchLoc()		#V-KATAL   #v-katalogisering
-+v-katalogisering: ref(26)
++V-KATAL: ref(26)
 27: branchLoc()		#V-LANEDISK#Lånedisken
-+Lånedisken: ref(27)
++V-LANEDISK: ref(27)
 28: branchLoc()		#SELF      #låneautomaten
-+låneautomaten: ref(28)
++SELF: ref(28)
 29: branchLoc()		#v-kurs    #v-kursbok
-+v-kursbok: ref(29)
++v-kurs: ref(29)
 34: branchLoc()		#MAKSU     #Verkkomaksaminen
-+Verkkomaksaminen: ref(34)
++MAKSU: ref(34)
 31: branchLoc()		#v-ebok    #v-elektronisk bok
-+v-elektroniskbok: ref(31)
++v-ebok: ref(31)
 30: branchLoc()		#v-video   #v-video
 +v-video: ref(30)
 32: branchLoc()		#v-tidskr  #v-tidskrift
-+v-tidskrift: ref(32)
++v-tidskr: ref(32)
 33: branchLoc()		#v-etidskr #Elektronisk tidskrift
-+Elektronisktidskrift: ref(33)
++v-etidskr: ref(33)
 35: branchLoc()		#v-databas #v-databas
 +v-databas: ref(35)
 
